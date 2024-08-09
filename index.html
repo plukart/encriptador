@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header class="header">
+        <!--logo-->
+        <img class="logo" src="/img/Logo.png" alt="logo">
+        <!--volver-->
+        <button class="btn-volver" onclick="location.href='/index.html'">Volver</button>
+
+    </header>
+    <main class="main">
+        <!----seccion de encriptar o desencriptar-->
+        <section class="text-area-container">
+            <textarea  class="text-area" cols="30" rows="10" placeholder="Ingresa el texto aqui"></textarea>
+            <div>
+                <h6 class="info">Solo letras minusculas y sin tildes</h6>
+            </div>
+            <div class="btns">
+                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+
+        <!----seccion de encriptado-->
+        <section class="text-area-message-container">
+            <textarea class="text-area-message" disabled cols="20" rows="10"></textarea>
+               
+            <!--boton copiar-->
+            <div class="btn-copiar-container">
+                <button class="btn-copiar" onclick="btnCopiar()">Copiar</button>
+            </div>
+         </section>
+    </main>
+
+    <script src="script.js"></script>
+    <footer>
+        <p class="footer">Desarrollado por Plukart</p>
+      </footer>
+</body>
+
+</html>
