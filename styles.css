@@ -26,7 +26,7 @@
 
 *{
   
-    background: var(--color-tertiary);
+
     font-family: "Inter";
     font-style: normal;
     font-weight: 400;
@@ -90,6 +90,7 @@
     margin-top: 30px;
     border-radius: 30px;
     text-transform: lowercase;
+    resize: none;
 }
 
 ::placeholder{color: var(--color-cuartary);}
@@ -102,7 +103,7 @@
 .text-area-message{
 
     width: 120%;
-    height: 300px;
+    height: 350px;
     background: var(--color-tertiary);
     background-image: url("./img/Muñeco.png");
     position: cover;
@@ -114,6 +115,7 @@
     margin-top: 0px;
     padding-left: 20px;
     padding: 5%;
+    resize: none;
 }
 
 
@@ -131,6 +133,8 @@
     margin-top: 180px;
     gap: 10px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     
 }
 
@@ -170,7 +174,7 @@
     cursor: pointer;
     height: 67px;
     margin-left: 108px;
-    margin-top: 48px;
+    margin-top: 2px;
     margin-right: 40px;
     position: absolute;
     width: 336px;
@@ -185,6 +189,7 @@
     color: #495057;
     font-size: 15px;
     margin-left: 20px;
+    margin-bottom: 5px;
    
 }
 
@@ -192,21 +197,60 @@
 /*estilos del footer*/
 
 
-.footer{
-
+footer{
     background-color: var(--color-primary);
-    height: 90px;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5em;
-    font-weight: bold;
-    color: var(--color-tertiary);
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    
+}
 
+footer .redes{
+    margin-bottom: 20px;
 
 }
+
+footer .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+
+footer .redes a:hover{
+    background-color: var(--color-hover-1);
+}
+
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: var(--color-primary);
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+
+footer .arriba:hover{
+    background-color: var(--color-hover-1);
+}
+    
+    
 
 
 /*estilos responsivos*/
@@ -302,7 +346,8 @@
         width: 80%;
         padding: 10%;
         margin-top: 2%;
-        margin-left: 10%;
+        margin-left: 5%;
+        text-align: center;
     }
 
     .text-area-message-container{
@@ -316,7 +361,7 @@
         width: 180%;
         height: 100%;
         margin: auto;
-        margin-left: 15%;
+        margin-left: 20%;
         margin-top: 20%;
 
     }
@@ -324,8 +369,8 @@
     .btns{
 
         margin-top: 18px;
-        margin-left: 100px;
-        
+        margin-left: 5%;
+        text-align: center;
     }
 
    
@@ -334,9 +379,9 @@
         margin-left: 5%;
     }
 
-    .footer{
+    footer{
         font-size: 1.5em;
-        margin-top: 5%;
+        margin-top: 250px;
 
         
     }
@@ -348,7 +393,21 @@
     
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 768px){
+    .btns{
+        text-align: center;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    footer{
+        font-size: 1.5em;
+        margin-top: 200px;
+    }
+}
+
+
+@media screen and (max-width: 525px){
 
     
     .logo{
@@ -402,9 +461,9 @@
     .btns{
 
         margin-top: 18px;
-        gap: 10px;
-        justify-content: center;
-        flex-direction: column;
+        margin-left: 100px;
+        margin-right: 100px;
+        text-align: center;
         
     }
 
@@ -415,9 +474,11 @@
         justify-content: center;
     }
 
-    .footer{
+    
+    footer{
         font-size: 1em;
-        margin-top: 85%;
+        margin-top: 180px ;
+        
         
     }
     
