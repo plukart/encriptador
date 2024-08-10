@@ -105,7 +105,7 @@
     width: 120%;
     height: 350px;
     background: var(--color-tertiary);
-    background-image: url("./img/Muñeco.png");
+    background-image: url(".img/Muñeco.png");
     position: cover;
     background-repeat: no-repeat;
     border: none;
