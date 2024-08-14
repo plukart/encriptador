@@ -281,7 +281,7 @@ footer .arriba:hover{
         height: 100vh;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 35%;
+        margin-bottom: 30%;
         margin-left: 0%;
         margin-top: 1%;
         box-sizing: border-box;
@@ -353,10 +353,11 @@ footer .arriba:hover{
         height: 100vh;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 20%;
+        margin-bottom: 40%;
         margin-left: 0%;
         margin-top: 1%;
         box-sizing: border-box;
+        
     }
 
     .text-area-container{
@@ -377,6 +378,7 @@ footer .arriba:hover{
     .text-area-message-container{
         align-items: center;
         margin-right: 200px;
+        margin-bottom: 50%;
         
         
     }
@@ -405,7 +407,7 @@ footer .arriba:hover{
 
     footer{
         font-size: 1.5em;
-        margin-top: 250px;
+        position: relative;
 
         
     }
@@ -418,6 +420,11 @@ footer .arriba:hover{
 }
 
 @media screen and (max-width: 768px){
+
+    .main{
+        margin-bottom: 50%;
+    }
+
     .btns{
         text-align: center;
         margin-left: 20%;
@@ -427,6 +434,7 @@ footer .arriba:hover{
     footer{
         font-size: 1.5em;
         margin-top: 200px;
+        position: relative;
     }
 }
 
@@ -459,7 +467,7 @@ footer .arriba:hover{
         height: 100%;
         display: flex;
         flex-direction: column;
-        
+        margin-bottom: 0%; 
         box-sizing: border-box;
 
     }
@@ -525,7 +533,7 @@ footer .arriba:hover{
     
     footer{
         font-size: 1em;
-        margin-top: 37% ;
+        margin-top: 0;
 }
 }
 @media screen and (max-width: 415px){
